@@ -38,7 +38,7 @@ public class Latihan5 extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         Hasil = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        Hasil2 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -94,17 +94,17 @@ public class Latihan5 extends javax.swing.JFrame {
         jPanel1.add(jLabel8);
         jLabel8.setBounds(100, 170, 50, 18);
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        Hasil.setViewportView(jTextArea1);
+        Hasil2.setColumns(20);
+        Hasil2.setRows(5);
+        Hasil.setViewportView(Hasil2);
 
         jPanel1.add(Hasil);
-        Hasil.setBounds(110, 290, 330, 110);
+        Hasil.setBounds(110, 280, 330, 110);
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 520, 420);
+        jPanel1.setBounds(0, 0, 530, 420);
 
-        pack();
+        setBounds(0, 0, 541, 460);
     }// </editor-fold>//GEN-END:initComponents
 
     private void ProsesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProsesActionPerformed
@@ -126,7 +126,7 @@ public class Latihan5 extends javax.swing.JFrame {
        else{
            predikat= "Predikat : Tidak Lulus";
        }
-       
+       Hasil2.setText("Nama :"+nama+"\n"+"Absen :"+kelas+"\n"+"Matpel :"+mapel+"\n"+"Nilai :"+nilai+"\n"+"Predicat :"+predikat+"\n");
         // TODO add your handling code here:
     }//GEN-LAST:event_ProsesActionPerformed
 
@@ -167,6 +167,7 @@ public class Latihan5 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane Hasil;
+    private javax.swing.JTextArea Hasil2;
     private javax.swing.JTextField Kelas;
     private javax.swing.JTextField Mapel;
     private javax.swing.JTextField Nama;
@@ -178,6 +179,5 @@ public class Latihan5 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }

@@ -57,7 +57,7 @@ public class Latihan4 extends javax.swing.JFrame {
 
         jLabel3.setText("Number 1");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(100, 100, 46, 14);
+        jLabel3.setBounds(100, 100, 50, 14);
 
         no2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
